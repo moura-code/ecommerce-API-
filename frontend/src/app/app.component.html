@@ -1,0 +1,22 @@
+<div class="nav">
+
+  <div class="nav-header">
+    <div class="nav-title">
+ECOMMERCE
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a [routerLink]="['/']" routerLinkActive="active"  >Home</a>
+    <a [routerLink]="['/Login']" routerLinkActive="active"  >Login</a>
+    <a [routerLink]="['/Registro']" routerLinkActive="active"  >Registro</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
