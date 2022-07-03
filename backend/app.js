@@ -4,7 +4,7 @@ const path = require('node:path');
 const cors = require("cors")
 const express = require('express')
 const app = express()
-var corsOptions = {origin: 'http://localhost:3000'}
+var corsOptions = {origin: 'http://localhost:4200'}
 app.use(cors(corsOptions))
 app.use(express.json())
 

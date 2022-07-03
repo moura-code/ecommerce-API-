@@ -1,0 +1,10 @@
+.example-card{
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+.a{
+color:green;
+display:inline;
+}

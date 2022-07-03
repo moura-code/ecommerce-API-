@@ -1,1 +1,13 @@
-<p>details works!</p>
+<ng-container *ngIf="product">
+  <div class="container">
+
+    <img class='tamano' [src]="product.image" >
+<hr class="line">
+<div class="center">
+    <h1>{{product.name}}</h1>
+    <h2 class=""> Price: <p class="a">{{product.price}}</p></h2>
+<h2>Amount: {{product.amount}}</h2>
+  </div>
+  </div>
+
+

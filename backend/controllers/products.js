@@ -1,6 +1,4 @@
 
-const { request } = require('express');
-const { StatusCodes } = require('http-status-codes');
 const productModel = require('../Models/productModel')
 
 
@@ -60,11 +58,12 @@ const  PostProduct = async (req, res)=>{
 const oneproduct = async (req,res)=>{
     try{
     const post = await productModel.findById(req.params.id)
-    if(post){ res.json(post)}
-    res.json({message:'producto no encontrado'})
+    if(post){ res.json(post)}else{res.json({message:'producto no encontrado'})}
     }catch(err){
         res.json({ message: err })
     }}
+
+
 const delone = async(req,res)=>{
     try{
         const post = await productModel.remove({_id: req.params.id})

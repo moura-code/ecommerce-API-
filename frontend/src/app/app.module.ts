@@ -13,6 +13,12 @@ import { MatSliderModule } from '@angular/material/slider';
 import { InputComponent } from './components/input/input.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ProductComponent } from './components/product/product.component';
+import { HttpClientModule } from "@angular/common/http";
+import { ProductsComponent } from './components/products/products.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +27,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     RegisterComponent,
     DetailsComponent,
     InputComponent,
+    ProductComponent,
+    ProductsComponent,
 
 
 
@@ -33,7 +41,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatSliderModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatGridListModule,
+    MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
